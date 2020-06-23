@@ -14,6 +14,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *pplControl;
+@property (weak, nonatomic) IBOutlet UILabel *perPersonLabel;
 
 @end
 
@@ -33,39 +35,37 @@
     double bill = [self.billField.text doubleValue];
     NSArray *percentages = @[@(0.15), @(0.2), @(0.22)];
     double tipPercentage = [percentages[self.tipControl.selectedSegmentIndex] doubleValue];
+    NSArray *numppl = @[@(1), @(2), @(3), @(4), @(5)];
+    double ppl = [numppl [self.pplControl.selectedSegmentIndex] doubleValue];
     double tip = tipPercentage * bill;
     double total = bill + tip;
+    double perpersontotal = total/ppl;
     self.tipLabel.text = [NSString stringWithFormat:@"$%.2f", tip];
     self.totalLabel.text = [NSString stringWithFormat:@"$%.2f", total];
+    self.perPersonLabel.text = [NSString stringWithFormat:@"$%.2f", perpersontotal];
     
 }
 
 - (IBAction)onEditingBegin:(id)sender {
     
     CGRect newFrame = self.billField.frame;
-    newFrame.origin.y +=30;
+    newFrame.origin.y +=10;
     
     [UIView animateWithDuration:0.2 animations:^{
         self.billField.frame = newFrame;
     }];
-    
-    [UIView animateWithDuration:1 animations:^{
-        self.tipLabel.alpha = 0;
-    }];
+
     
 }
 - (IBAction)onEditingEnd:(id)sender {
     
     CGRect newFrame = self.billField.frame;
-    newFrame.origin.y -=30;
+    newFrame.origin.y -=10;
     
     [UIView animateWithDuration:0.2 animations:^{
         self.billField.frame = newFrame;
     }];
-    
-    [UIView animateWithDuration:1 animations:^{
-        self.tipLabel.alpha = 1;
-    }];
+
     
     
 }
