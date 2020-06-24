@@ -14,22 +14,22 @@ The following **optional** features are implemented:
 
 * [x] Settings page to change the default tip percentage.
 * [x] UI animations
-* [x] Remembering the bill amount across app restarts (if <10mins)
+* [ ] Remembering the bill amount across app restarts (if <10mins)
 * [x] Using locale-specific currency and currency thousands separators.
 * [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
-- [x] Interesting UI
+- [x] Interesting and aesthetic UI
 - [x] Dividing total price by providing an option for number of people to divide amongst.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/6WsaO26ckA.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+GIF created with RecordIt.
 
 ## Notes
 
@@ -37,13 +37,11 @@ This was a really fun app to build! At first, it was a little bit difficult to n
 
 ## Credits
 
-List an 3rd party libraries, icons, graphics, or other assets you used in your app.
-
 - [AFNetworking](https://github.com/AFNetworking/AFNetworking) - networking task library
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2020 Pranathi Peri
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
