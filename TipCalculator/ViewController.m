@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *pplControl;
 @property (weak, nonatomic) IBOutlet UILabel *perPersonLabel;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *settingsButton;
 
 @end
 
@@ -65,9 +66,8 @@
     [UIView animateWithDuration:0.2 animations:^{
         self.billField.frame = newFrame;
     }];
-
-    
-    
 }
+
+
 
 @end
