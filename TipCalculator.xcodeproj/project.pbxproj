@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C352A9DB24A2DCC500041D15 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C352A9DA24A2DCC500041D15 /* SettingsViewController.m */; };
 		C3D3B99A24A289EA00A5530B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D3B99924A289EA00A5530B /* AppDelegate.m */; };
 		C3D3B99D24A289EA00A5530B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D3B99C24A289EA00A5530B /* SceneDelegate.m */; };
 		C3D3B9A024A289EA00A5530B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D3B99F24A289EA00A5530B /* ViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C352A9D924A2DCC500041D15 /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		C352A9DA24A2DCC500041D15 /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		C3D3B99524A289EA00A5530B /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D3B99824A289EA00A5530B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3D3B99924A289EA00A5530B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				C3D3B9A624A289EC00A5530B /* LaunchScreen.storyboard */,
 				C3D3B9A924A289EC00A5530B /* Info.plist */,
 				C3D3B9AA24A289EC00A5530B /* main.m */,
+				C352A9D924A2DCC500041D15 /* SettingsViewController.h */,
+				C352A9DA24A2DCC500041D15 /* SettingsViewController.m */,
 			);
 			path = TipCalculator;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 			files = (
 				C3D3B9A024A289EA00A5530B /* ViewController.m in Sources */,
 				C3D3B99A24A289EA00A5530B /* AppDelegate.m in Sources */,
+				C352A9DB24A2DCC500041D15 /* SettingsViewController.m in Sources */,
 				C3D3B9AB24A289EC00A5530B /* main.m in Sources */,
 				C3D3B99D24A289EA00A5530B /* SceneDelegate.m in Sources */,
 			);

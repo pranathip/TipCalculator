@@ -33,8 +33,11 @@
 }
 
 - (IBAction)onEdit:(id)sender {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    double doubleValue = [defaults doubleForKey:@"default_tip_percentage"];
+    doubleValue = doubleValue / 100.0;
     double bill = [self.billField.text doubleValue];
-    NSArray *percentages = @[@(0.15), @(0.2), @(0.22)];
+    NSArray *percentages = @[@(0.15), @(0.2), @(0.22), @(doubleValue)];
     double tipPercentage = [percentages[self.tipControl.selectedSegmentIndex] doubleValue];
     NSArray *numppl = @[@(1), @(2), @(3), @(4), @(5)];
     double ppl = [numppl [self.pplControl.selectedSegmentIndex] doubleValue];
